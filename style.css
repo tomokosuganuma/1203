@@ -1,0 +1,120 @@
+body {
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* ───────────────
+    タイトル＋検索フォーム
+   ─────────────── */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* 検索フォーム */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-form input {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ───────────────
+    新しいブログ追加フォーム
+   ─────────────── */
+.add-form {
+  background: #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.add-form h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 入力フィールド */
+.blog-form input,
+.blog-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 15px;
+}
+
+.blog-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* 追加ボタン */
+.add-btn {
+  width: 90px;
+  padding: 10px 0;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* ───────────────
+    ブログカード
+   ─────────────── */
+.blog-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.blog-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.blog-card .date {
+  color: #555;
+  margin-bottom: 10px;
+}

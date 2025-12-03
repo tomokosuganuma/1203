@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>検索結果</title>
+</head>
+<body>
+
+<h2>キーワード検索結果「<%= keyword %>」</h2>
+
+<% results.forEach(r => { %>
+  <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px">
+      <h3><%= r.title %></h3>
+      <p>投稿日: <%= r.date.toISOString().slice(0,10) %></p>
+      <p><%= r.content %></p>
+  </div>
+<% }) %>
+
+<a href="/">戻る</a>
+
+</body>
+</html>
